@@ -8,7 +8,6 @@ main =
     , cylinder [ position 1 0.75 -3, radius 0.5, height 1.5, color "#FFC65D" ] []
     , plane [ position 0 0 -4, rotation -90 0 0, width 4, height 4, color "#7BC8A4" ] []
     , sky [ color "#ECECEC" ] [] 
-    , camera [] [ cursor [] [] ]
     ]
 
 

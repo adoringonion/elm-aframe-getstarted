@@ -61,14 +61,26 @@ color : String -> Attribute msg
 color value =
     attribute "color" value 
 
-height : Float -> Attribute msg
-height value =
+aheight : Float -> Attribute msg
+aheight value =
     attribute "height" (String.fromFloat value)
 
-width : Float -> Attribute msg
-width value =
+awidth : Float -> Attribute msg
+awidth value =
     attribute "width" (String.fromFloat value)
 
 atext : List (Attribute msg) -> List (Html msg) -> Html msg
 atext =
     node "a-text"
+
+background : String -> Attribute msg
+background value =
+    attribute "background" value
+
+avalue : String -> Attribute msg 
+avalue value =
+    attribute "value" value
+
+changecoloronhover : String -> Attribute msg 
+changecoloronhover value =
+    attribute "change-color-on-hover" value
